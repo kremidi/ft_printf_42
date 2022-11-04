@@ -26,7 +26,7 @@ int	ft_printf(const char* str, ...)
 			else if (*str == 'x')
 				n += ft_putlowhex(va_arg(format, long unsigned int));
 			else if (*str == 'X')
-				n += ft_putUPhex(va_arg(format, unsigned int));
+				n += ft_putuphex(va_arg(format, unsigned int));
 			else if (*str == 'p')
 				n += ft_putadr(va_arg(format, long unsigned int));
 			else
